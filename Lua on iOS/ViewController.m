@@ -25,6 +25,10 @@
 
     // run sth simple
     [m runCodeFromString:@"print(2 + 2)"];
+
+    // maintain state
+    [m runCodeFromString:@"x = 0"];
+    [m runCodeFromString:@"print(x + 1)"];
 }
 
 @end

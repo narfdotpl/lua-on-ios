@@ -11,14 +11,23 @@
 #define to_cString(s) ([s cStringUsingEncoding:[NSString defaultCStringEncoding]])
 
 
+@interface LuaManager ()
+
+@property (nonatomic) lua_State *state;
+
+@end
+
+
 @implementation LuaManager
 
 - (lua_State *)state {
-    lua_State *L = luaL_newstate();
-    luaL_openlibs(L);
-    lua_settop(L, 0);
+    if (!_state) {
+        _state = luaL_newstate();
+        luaL_openlibs(_state);
+        lua_settop(_state, 0);
+    }
 
-    return L;
+    return _state;
 }
 
 - (void)runCodeFromString:(NSString *)code {
