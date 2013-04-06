@@ -29,6 +29,10 @@
     // maintain state
     [m runCodeFromString:@"x = 0"];
     [m runCodeFromString:@"print(x + 1)"];
+
+    // run file
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"foo" ofType:@"lua"];
+    [m runCodeFromFileWithPath:path];
 }
 
 @end

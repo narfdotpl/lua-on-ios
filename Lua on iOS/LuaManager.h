@@ -16,5 +16,6 @@
 @interface LuaManager : NSObject
 
 - (void)runCodeFromString:(NSString *)code;
+- (void)runCodeFromFileWithPath:(NSString *)path;
 
 @end

@@ -49,4 +49,23 @@
     }
 }
 
+- (void)runCodeFromFileWithPath:(NSString *)path {
+    // get state
+    lua_State *L = self.state;
+
+    // compile
+    int error = luaL_loadfile(L, to_cString(path));
+    if (error) {
+        luaL_error(L, "cannot compile Lua file: %s", lua_tostring(L, -1));
+        return;
+    }
+
+    // run
+    error = lua_pcall(L, 0, 0, 0);
+    if (error) {
+        luaL_error(L, "cannot run Lua code: %s", lua_tostring(L, -1));
+        return;
+    }
+}
+
 @end
