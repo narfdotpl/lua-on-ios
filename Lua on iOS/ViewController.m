@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LuaManager.h"
 
 
 @interface ViewController ()
@@ -18,7 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    // create a manager
+    LuaManager *m = [[LuaManager alloc] init];
+
+    // run sth simple
+    [m runCodeFromString:@"print(2 + 2)"];
 }
 
 @end
