@@ -21,11 +21,11 @@ Each step is covered in a separate commit.
 4. [Call an Objective-C function from Lua][c4].
 5. [Pass to Lua a pointer to an Objective-C object][c5].
 
-  [c1]: #todo
-  [c2]: #todo
-  [c3]: #todo
-  [c4]: #todo
-  [c5]: #todo
+  [c1]: https://github.com/narfdotpl/lua-on-ios/commit/ae7b77e
+  [c2]: https://github.com/narfdotpl/lua-on-ios/commit/c485794
+  [c3]: https://github.com/narfdotpl/lua-on-ios/commit/b3887e7
+  [c4]: https://github.com/narfdotpl/lua-on-ios/commit/5b6fcb6
+  [c5]: https://github.com/narfdotpl/lua-on-ios/commit/804e1a1
 
 
 How to test this?
