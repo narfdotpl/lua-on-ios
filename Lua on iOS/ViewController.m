@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LuaManager.h"
+#import "Person.h"
 
 
 // let's prefix `lua_CFunctions` with `l_` as in http://www.lua.org/pil/26.1.html
@@ -52,6 +53,16 @@ int l_sum(lua_State *L) {
     // call objc function from lua
     [m registerFunction:l_sum withName:@"sum"];
     [m runCodeFromString:@"print(sum(1, 2))"];
+
+    // create a person called Alice
+    Person *person = [[Person alloc] init];
+    person.name = @"Alice";
+    NSLog(@"Person's name is %@.", person.name);
+
+    // rename person to Bob
+    [m registerFunction:l_set_person_name withName:@"set_person_name"];
+    [m callFunctionNamed:@"set_person_name_to_bob" withObject:person];
+    NSLog(@"Person's name is %@.", person.name);
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0790D91711973C00E4DD39 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0790D81711973C00E4DD39 /* Person.m */; };
 		CBBEB7CD1710E7DA00006539 /* LuaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBEB7CC1710E7DA00006539 /* LuaManager.m */; };
 		CBBEB7CF1710EAEC00006539 /* foo.lua in Resources */ = {isa = PBXBuildFile; fileRef = CBBEB7CE1710EAEC00006539 /* foo.lua */; };
 		CBF21DBF1710E5B000FCB91E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF21DBE1710E5B000FCB91E /* UIKit.framework */; };
@@ -25,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		26968ACD4C55486E99503630 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0790D71711973C00E4DD39 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = "Lua on iOS/Person.h"; sourceTree = "<group>"; };
+		CB0790D81711973C00E4DD39 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = "Lua on iOS/Person.m"; sourceTree = "<group>"; };
 		CBBEB7CB1710E7DA00006539 /* LuaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaManager.h; sourceTree = "<group>"; };
 		CBBEB7CC1710E7DA00006539 /* LuaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LuaManager.m; sourceTree = "<group>"; };
 		CBBEB7CE1710EAEC00006539 /* foo.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = foo.lua; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 		CBF21DB21710E5B000FCB91E = {
 			isa = PBXGroup;
 			children = (
+				CB0790D71711973C00E4DD39 /* Person.h */,
+				CB0790D81711973C00E4DD39 /* Person.m */,
 				CBF21DC41710E5B000FCB91E /* Lua on iOS */,
 				CBF21DBD1710E5B000FCB91E /* Frameworks */,
 				CBF21DBC1710E5B000FCB91E /* Products */,
@@ -210,6 +215,7 @@
 				CBF21DCF1710E5B000FCB91E /* AppDelegate.m in Sources */,
 				CBF21DDB1710E5B000FCB91E /* ViewController.m in Sources */,
 				CBBEB7CD1710E7DA00006539 /* LuaManager.m in Sources */,
+				CB0790D91711973C00E4DD39 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

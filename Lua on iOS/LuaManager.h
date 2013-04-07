@@ -18,5 +18,6 @@
 - (void)runCodeFromString:(NSString *)code;
 - (void)runCodeFromFileWithPath:(NSString *)path;
 - (void)registerFunction:(lua_CFunction)function withName:(NSString *)name;
+- (void)callFunctionNamed:(NSString *)name withObject:(NSObject *)object;
 
 @end
