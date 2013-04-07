@@ -68,4 +68,8 @@
     }
 }
 
+- (void)registerFunction:(lua_CFunction)function withName:(NSString *)name {
+    lua_register(self.state, to_cString(name), function);
+}
+
 @end
