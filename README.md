@@ -5,6 +5,7 @@ A sequence of clear commits showing how to add Lua to an empty iOS app.
 
 Written in early 2013 (Lua 5.2, Xcode 4.6, iOS 6.1).  Based on parts
 [two][] and [three][] of James Norton's "Scripting iOS Games With Lua".
+Released into the public domain.
 
   [two]: http://blog.stokedsoftware.com/blog/2012/02/05/scripting-ios-games-with-lua-part-ii/
   [three]: http://blog.stokedsoftware.com/blog/2012/02/06/scripting-ios-games-with-lua-part-iii/
